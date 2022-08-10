@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+int n,z=0,d=1,rem,x,y;
+printf("enter number:\n");
+scanf("%d",&n);
+printf("enter x and y values:\n");
+scanf("%d%d",&x,&y);
+while(n>0)
+{
+    rem=n%10;
+    if(rem==x)
+    z=z+y*d;
+    else
+    z=z+rem*d;
+    d*=10;
+    n/=10;
+
+}
+printf("%d\n",z);
+
+
+    return 0;
+}
